@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Team Black Website</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="backdrop" id="backdrop-element"></div>
+    <aside class="modal" id="plan-basic-overlay">
+      <p>Thank you for your interest in our basic plan.</p>
+      <p>Please email plans@codebytelabs.com</p>
+      <button onclick="closePlanBasicOverlay()">Close</button>
+    </aside>
+    <aside class="modal" id="plan-standard-overlay">
+      <p>Thank you for your interest in our standard plan.</p>
+      <p>Please email plans@codebytelabs.com</p>
+      <button onclick="closePlanStandardOverlay()">Close</button>
+    </aside>
+    <aside class="modal" id="plan-premium-overlay">
+      <p>Thank you for your interest in our premium plan.</p>
+      <p>Please email plans@codebytelabs.com</p>
+      <button onclick="closePlanPremiumOverlay()">Close</button>
+    </aside>
+    <header>
+      <nav class="nav-bar">
+        <img class="clogo" src="/Images/logo/comp_logo.png" alt="Company Logo">
+        <a href="index.html">Login</a>
+        <a href="index.html">Make a Request</a>
+      </nav>
+    </header>
+    <main>
+      <div class="works">
+        <h1>Our Works</h1>
+        <div class="ill">
+          <h2 id="ill-bg">Illustrations</h2>
+          <div class="ill-img">
+            <img src="/Images/Illustrations/forest.png" alt="forest" />
+            <img src="/Images/Illustrations/man-in-space.png" alt="man in space" />
+            <img src="/Images/Illustrations/city-life.png" alt="city life" />
+            <img src="/Images/Illustrations/tree-horizon.png" alt="tree horizon" />
+          </div>
+        </div>
+        <div class="graphics">
+          <h2 id="graph-bg">Graphics</h2>
+          <div class="g-img">
+            <img src="/Images/graphics/line-graphics.png" alt="line-graphics" />
+            <img src="/Images/graphics/mind-img.png" alt="city life" />
+            <img src="/Images/graphics/thoughts.png" alt="city life" />
+            <img src="/Images/graphics/vector.png" alt="city life" />
+          </div>
+        </div>
+      </div>
+      <div class="pricing-container">
+        <div class="pricing-plan">
+          <h3 class="plan-title">Basic</h3>
+          <p class="plan-price">Free</p>
+          <ul class="plan-features">
+            <li>✅ Fonts</li>
+            <li>🚫 Illustrations</li>
+            <li>🚫 Graphics</li>
+          </ul>
+          <button onclick="openPlanBasicOverlay()" class="plan-button" id="plan-basic">Sign Up</a>
+        </div>
+        <div class="pricing-plan">
+          <h3 class="plan-title">Standard</h3>
+          <p class="plan-price">$9.99/month</p>
+          <ul class="plan-features">
+            <li>✅ Fonts</li>
+            <li>✅ Illustrations</li>
+            <li>🚫 Graphics</li>
+          </ul>
+          <button onclick="openPlanStandardOverlay()" class="plan-button" id="plan-standard">Sign Up</a>
+        </div>
+        <div class="pricing-plan">
+          <h3 class="plan-title">Premium</h3>
+          <p class="plan-price">$19.99/month</p>
+          <ul class="plan-features">
+            <li>✅ Fonts</li>
+            <li>✅ Illustrations</li>
+            <li>✅ Graphics</li>
+          </ul>
+          <button onclick="openPlanPremiumOverlay()" class="plan-button" id="plan-premium">Sign Up</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="address">
+        <h3>Address</h3>
+        <p>Studio 70u Finley Bypass <br> Lake Grantberg <br> Alanton <br> L25 8SJ</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; CBL 2023</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

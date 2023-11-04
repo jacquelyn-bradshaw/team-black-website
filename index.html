@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Team Black Website</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="backdrop" id="backdrop-element"></div>
+    <aside class="modal" id="get-in-touch-overlay">
+      <p>Please email enquiries@codebytelabs.com</p>
+      <button onclick="closeGetInTouch()">Close</button>
+    </aside>
+    <aside class="modal" id="subscribe-overlay">
+      <p>Thank you for your interest in our newsletter.</p>
+      <p>Please email newsletter@codebytelabs.com</p>
+      <button onclick="closeSubscribe()">Close</button>
+    </aside>
+    <header>
+      <nav class="nav-bar">
+        <img
+          class="clogo"
+          src="/Images/logo/comp_logo.png"
+          alt="Company Logo"
+        />
+        <a href="index2.html">Illustrations</a>
+        <a href="index2.html">Graphics</a>
+      </nav>
+    </header>
+    <main>
+      <div class="name">
+        <h1>Code Byte Labs</h1>
+        <img src="/Images/logo/comp_name.png" />
+      </div>
+      <div class="intro">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus
+          elementum sagittis vitae et leo duis ut. Urna nec tincidunt praesent
+          semper feugiat. Aliquam ultrices sagittis orci a.
+        </p>
+        <button onclick="openGetInTouch()" class="get-in-touch" type="button">
+          Get in touch
+        </button>
+
+        <div class="reviews" style="height: 200px; overflow-y: scroll">
+          <h2>Reviews</h2>
+          <h3>Howard from AC</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            eleifend mi in nulla posuere sollicitudin. Urna cursus eget nunc
+            scelerisque. Mauris pellentesque pulvinar pellentesque habitant
+            morbi.
+          </p>
+          <h3>Howard from AC</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            eleifend mi in nulla posuere sollicitudin. Urna cursus eget nunc
+            scelerisque. Mauris pellentesque pulvinar pellentesque habitant
+            morbi.
+          </p>
+          <h3>Howard from AC</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            eleifend mi in nulla posuere sollicitudin. Urna cursus eget nunc
+            scelerisque. Mauris pellentesque pulvinar pellentesque habitant
+            morbi.
+          </p>
+          <h3>Howard from AC</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+            eleifend mi in nulla posuere sollicitudin. Urna cursus eget nunc
+            scelerisque. Mauris pellentesque pulvinar pellentesque habitant
+            morbi.
+          </p>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h2>Subscribe To Our Newsletter</h2>
+        <form>
+          <input type="text" placeholder="First and Last Name" maxlength="" />
+          <input type="email" placeholder="Email Address" />
+          <button onclick="openSubscribe()" type="button">Subscribe</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="address">
+          <h3>Address</h3>
+          <p>
+            Studio 70u Finley Bypass <br />
+            Lake Grantberg <br />
+            Alanton <br />
+            L25 8SJ
+          </p>
+          <div class="sm">
+            <a href="https://www.facebook.com/"
+              ><img
+                src="/Images/sm-logo/facebook-logo-png-6371.png"
+                alt="facebook logo"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="/Images/sm-logo/logo-instagram-png-13547.png"
+                alt="instagram logo"
+            /></a>
+            <a href="https://twitter.com/?lang=en/"
+              ><img
+                src="/Images/sm-logo/twitter-png-5981.png"
+                alt="twitter logo"
+            /></a>
+          </div>
+        </div>
+        <div class="payment">
+          <h3>Payment Options</h3>
+          <ul>
+            <li>Basic</li>
+            <li>Pro</li>
+            <li>Premium</li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <div class="form-container">
+            <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked />
+              <input type="radio" name="slide" id="signup" />
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Signup</label>
+              <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+              <form action="#" class="login">
+                <div class="field">
+                  <input type="text" placeholder="Email Address" required />
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Password" required />
+                </div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Login" />
+                </div>
+              </form>
+              <form action="#" class="signup">
+                <div class="field">
+                  <input type="text" placeholder="Email Address" required />
+                </div>
+                <div class="field">
+                  <input type="password" placeholder="Password" required />
+                </div>
+                <div class="field">
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    required
+                  />
+                </div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; CBL 2023</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,459 @@
+/* Whole site CSS styles */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: black;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 5rem;
+  padding: 0 1.5rem;
+  background-color: rgb(209, 234, 242);
+}
+
+main {
+  margin: 7rem auto 2rem auto;
+  background-image: url('/Images/bg/homeBG.jpg');
+}
+
+a {
+  margin: auto;
+  padding: 1rem;
+  text-decoration: none;
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.nav-bar {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.clogo {
+  height: 4rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.copyright {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Overlay CSS styles */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal {
+  color: blue;
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.modal button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(209, 234, 242);
+  color: blue;
+}
+
+/* index.html CSS styles */
+
+.name {
+  text-align: center;
+}
+
+.intro {
+  padding: 1rem;
+}
+
+.get-in-touch {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(209, 234, 242);
+  color: blue;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.reviews {
+  padding: 1rem;
+  background-image: url('/Images/bg/Review.jpg');
+}
+
+.newsletter {
+  padding: 1rem;
+}
+
+.newsletter input {
+  margin: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+
+.newsletter button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(209, 234, 242);
+  color: blue;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sm {
+  margin-top: 1rem;
+}
+
+.sm a {
+  padding: 0;
+}
+
+.sm img {
+  height: 3rem;
+}
+
+.payment ul {
+  margin: 1rem;
+  list-style: circle;
+}
+
+/* Login & Signup Form CSS styles */
+.wrapper {
+  overflow: hidden;
+  max-height: 220px;
+  min-height: 220px;
+  max-width: 260px;
+  background: #fff;
+  padding: 0 15px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title-text {
+  display: flex;
+  width: 200%;
+}
+
+.wrapper .title {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .slide-controls {
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  margin: 15px 0 0 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+
+.slide-controls label.signup {
+  color: #000;
+}
+
+.slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#signup:checked~.slider-tab {
+  left: 50%;
+}
+
+#signup:checked~label.signup {
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+
+#signup:checked~label.login,
+#login:checked~label.signup {
+  color: #000;
+}
+
+#login:checked~label.login {
+  cursor: default;
+  user-select: none;
+}
+
+.wrapper .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-inner form .field {
+  height: 35px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form-inner form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-inner form .field input:focus {
+  border-color: #fc83bb;
+}
+
+.form-inner form .field input::placeholder {
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+form .field input:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.form-inner form .pass-link {
+  margin-top: 5px;
+}
+
+.form-inner form .signup-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+  color: #fa4299;
+  text-decoration: none;
+}
+
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+form .btn {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+form .btn .btn-layer {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  ;
+}
+
+form .btn:hover .btn-layer {
+  left: 0;
+}
+
+form .btn input[type="submit"] {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+/* index2.html CSS styles */
+
+#ill-bg {
+  padding: 0.5rem 1rem;
+  background-image: url('/Images/bg/illbg.png');
+}
+
+#graph-bg {
+  padding: 0.5rem 1rem;
+  background-image: url('/Images/bg/graphicsbg.png');
+}
+
+.ill-img, .g-img {
+  padding: 1rem;
+  width: 100%; 
+  height:700px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-content: space-between;
+}
+
+.ill-img img, .g-img img {
+  width: 350px;
+  height: 300px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  gap: 2rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.pricing-plan {
+  flex: 1;
+  background-color: whitesmoke;
+  color: blue;
+  height: 100%;
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.plan-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.plan-button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(248, 74, 11);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.address {
+  padding: 0 1rem;
+}
+
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .pricing-plan {
+    width: 90%;
+  }
+
+  .ill-img, .g-img {
+    padding: 1rem;
+    width: 100%; 
+    height:100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
