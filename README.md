@@ -1,5 +1,5 @@
-# team-black-website
-- Website created during Code First Girls MOOC Challenge by collaborating as a team
+# website
+- Website created by collaborating as a team
 - Website offering graphics, illustrations and fonts services
 
 🗂 Folder layout
